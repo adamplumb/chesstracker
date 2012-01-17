@@ -5,14 +5,16 @@ Author: Adam Plumb
 
 This is a web application written for PHP/MySQL.
 
-This application tracks the results of chess matches over a period of time between a group of players
-with the goal of rating players with an Elo-like system used by the major chess federations.  It provides 
-forms to add games and to add tournaments (to which games are attributed).  Once games are added, \
+This application tracks the results of chess matches over a period of time 
+between a group of players with the goal of rating players with an Elo-like 
+system used by the major chess federations.  It provides forms to add games and 
+to add tournaments (to which games are attributed).  Once games are added, 
 there are charts and graphs to look at which break things down statistically.
 
-Note from the author:  I created this application quickly and for a single purpose, to track the chess
-games I was playing with my co-workers.  It is Quick 'n Dirty (tm) and was never intended for public
-consumption.  However, I was convinced to make the code public and so here it is!  Enjoy!
+Note from the author:  I created this application quickly and for a single 
+purpose, to track the chess games I was playing with my co-workers.  It is 
+Quick 'n Dirty (tm) and was never intended for public consumption.  However, 
+I was convinced to make the code public and so here it is!  Enjoy!
 
 Install
 -------
@@ -23,20 +25,26 @@ Install
 Adding Players
 --------------
 
-There are forms to add games and tournaments but not to add players.  To do this you'll need to manually 
-insert a row into the players db table with the appropriate information.  I would suggest using a tool
-like phpmyadmin to make this easier.  But you can you the command-line if you like.  You'll want to use an insert statement like: INSERT INTO players (created, name) VALUES (now(), 'Adam Plumb');
+There are forms to add games and tournaments but not to add players.  To do 
+this you'll need to manually insert a row into the players db table with the 
+appropriate information.  I would suggest using a tool like phpmyadmin to make 
+this easier.  But you can you the command-line if you like.  You'll want to use 
+an insert statement like: 
+
+    INSERT INTO players (created, name) VALUES (now(), 'Adam Plumb');
 
 Changing player names, game information, ratings, tournment information
 -----------------------------------------------------------------------
 
-There are no interfaces or forms for modifying information; this will need to be done manually via
-MySQL.  Also, bear in mind that ratings for players are updated every time a game is added and can't be
-easily changed back.  However, if someone is interested, it should be easy enough to write a function
-to recalculate ratings from scratch.
+There are no interfaces or forms for modifying information; this will need to 
+be done manually via MySQL.  Also, bear in mind that ratings for players are 
+updated every time a game is added and can't be easily changed back.  However, 
+if someone is interested, it should be easy enough to write a function to 
+recalculate ratings from scratch.
 
 
 
 ===========================
 
-I am making this code public and free to use or modify without having to notify me.
+I am making this code public and free to use or modify without having to 
+notify me.

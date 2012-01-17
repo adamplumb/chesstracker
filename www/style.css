@@ -1,0 +1,60 @@
+body{
+    font-size: 10pt;
+    font-family: Arial;
+}
+table{
+    font-size: 10pt;
+    font-family: Arial;
+}
+
+.classj{
+    background-color: #ffffff;
+}
+
+.classi{
+    background-color: #e5e5e5;
+}
+
+.classh{
+    background-color: #cccccc;
+}
+
+.classg{
+    background-color: #b2b2b2;
+}
+
+.classf{
+    background-color: #998a8a;
+}
+
+.classe{
+    background-color: #ffffd9;
+}
+
+.classd{
+    background-color: #ffff99;
+}
+
+.classc{
+    background-color: #e5e573;
+}
+
+.classb{
+    background-color: #cccc52;
+}
+
+.classa{
+    background-color: #b2b200;
+}
+
+.expert{
+    background-color: #99adff;
+}
+
+.nationalmaster{
+    background-color: #6685ff;
+}
+
+.seniormaster{
+    background-color: #335cff;
+}
